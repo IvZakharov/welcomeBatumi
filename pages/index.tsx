@@ -15,7 +15,7 @@ export default function Home() {
           <CategoriesSection />
         </div>
 
-        <div className={"mb-15 md:mb-20"}>
+        <div className={"mb-15 md:mb-10"}>
           <PromoSection />
         </div>
       </>
