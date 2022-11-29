@@ -10,8 +10,6 @@
     padding-top: 35px;
   }
 
-
-
   .title {
     font-weight: 600;
     font-size: 34px;
@@ -20,6 +18,11 @@
     
     @media (min-width: 1200px) {
       font-size: 70px;
+
+      img {
+        width: 115px;
+        height: 68px;
+      }
     }
 
     img {

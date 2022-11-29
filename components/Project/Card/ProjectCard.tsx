@@ -62,6 +62,7 @@ const ProjectCard: React.FC<ProjectCard> = ({
             src={imagePath}
             alt={name}
             fill
+            priority
             blurDataURL={placeholder}
             placeholder={"blur"}
             quality={80}
