@@ -1,0 +1,77 @@
+@import "styles/variables";
+
+.promoSection {
+
+  .promo {
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(92.49deg, #E0EDFA 37.81%, #FFDCC8 100%);
+
+    @media (min-width: 1200px) {
+      padding: 43px 60px;
+
+    }
+
+    .title {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 36px;
+
+      @media (min-width: 1200px) {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 55px;
+      }
+    }
+
+    .imageBox {
+      transform: translate(20px, 20px);
+      margin-top: auto;
+
+      @media (min-width: 768px) {
+        transform: translate(0, 0);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 480px;
+      }
+    }
+
+    .itemTitle {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 10px;
+
+      @media (min-width: 1200px) {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+
+    .description {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      max-width: 80%;
+      color: #707070;
+      margin-bottom: 20px;
+
+      @media (min-width: 1200px) {
+          max-width: 50%;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+}

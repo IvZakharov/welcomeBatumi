@@ -1,0 +1,22 @@
+@import "styles/variables";
+
+.mainNav {
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    li {
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      transition: color .2s ease-in-out;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

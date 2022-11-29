@@ -1,0 +1,110 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./variables";
+@import "./libs/normalize";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.button {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: $primary;
+  border-radius: 8px;
+  transition: background-color .2s ease-in-out;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #0056B8;
+  }
+
+  &:active {
+    background-color: #2b75cc;
+  }
+}
+
+.buttonLight {
+  background: #E0EDFA;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: $primary;
+  white-space: nowrap;
+
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: #C2DCF6;
+  }
+
+  &:active {
+    background-color: #a5c5e6;
+  }
+}
+
+.iconButton {
+  padding: 10px;
+  border-radius: 100%;
+  box-sizing: content-box;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: #e9f2fa;
+  }
+
+  &:active {
+    background-color: #d4e5f8;
+  }
+}
+
+.buttonClickEffect {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    background: $primary-light;
+    display: block;
+    position: absolute;
+    width: 200%;
+    top: 0;
+    left: 0;
+    height: 200%;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s
+  }
+
+  &:active:before {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+}
+
+.swiper-button-disabled {
+  opacity: .5;
+}

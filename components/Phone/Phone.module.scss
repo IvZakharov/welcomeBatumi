@@ -1,0 +1,31 @@
+@import "styles/variables";
+
+.phone {
+
+  .phoneNumber {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #111111;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .requestCall {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $primary;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+    
+    &:hover {
+      color: darken($primary, 8);
+    }
+  }
+}

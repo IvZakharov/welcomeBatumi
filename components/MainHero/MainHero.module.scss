@@ -1,0 +1,100 @@
+@import "styles/variables";
+
+.hero {
+  background-color: #F4F9FF;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  position: relative;
+  
+  @media (min-width: 768px) {
+    padding-top: 35px;
+  }
+
+
+
+  .title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 115%;
+    margin-bottom: 15px;
+    
+    @media (min-width: 1200px) {
+      font-size: 70px;
+    }
+
+    img {
+      display: inline;
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #707070;
+    margin-bottom: 25px;
+
+    @media (min-width: 1200px) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  .button {
+    width: 100%;
+    padding: 14px 0;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      width: auto;
+      padding: 18px 50px;
+    }
+  }
+
+  .swiper {
+    position: relative;
+
+    @media (min-width: 1200px) {
+      width: 50vw;
+    }
+
+    .slide {
+      @media (min-width: 1200px) {
+        width: 380px !important;
+      }
+
+    }
+
+    .arrows {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      @media (min-width: 768px) {
+        justify-content: flex-start;
+      }
+    }
+
+    .arrowPrev,
+    .arrowNext {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+
+      @media (min-width: 1200px) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+    .arrowPrev {
+      padding-right: 2px;
+    }
+    .arrowNext {
+      padding-left: 2px;
+    }
+  }
+}

@@ -1,0 +1,183 @@
+@import "../../../styles/variables";
+
+.projectCard {
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+  .imageBox {
+    position: relative;
+    height: 200px;
+    margin: -1px;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+
+    @media (min-width: 1200px) {
+      height: 300px;
+    }
+  }
+  .vip {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: $yellow;
+    border-radius: 100%;
+    z-index: 5;
+
+    @media (min-width: 1200px) {
+      padding: 15px;
+      font-size: 14px;
+    }
+  }
+
+  .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 19px;
+      left: 30px;
+      top: 25px;
+    }
+  }
+
+  .labelSale {
+    background-color: $yellow;
+  }
+
+  .labelStart {
+    background-color: $coral;
+  }
+
+  .labelCredit {
+    background-color: $green;
+  }
+
+  .content {
+    padding: 10px 20px 20px;
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+    
+    @media (min-width: 1200px) {
+      padding: 30px;
+    }
+  }
+
+  .projectType {
+    margin-bottom: 8px;
+    padding: 5px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  .name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    
+    @media (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 0;
+    }
+  }
+
+  .address {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #707070;
+    margin-bottom: 15px;
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .specs {
+    margin-bottom: 10px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+
+      .type {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+
+        @media (min-width: 1200px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      .value {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: right;
+        font-weight: 600;
+
+        @media (min-width: 1200px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    button {
+      width: 100%;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 12px 0;
+
+      @media (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+}

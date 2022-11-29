@@ -1,0 +1,23 @@
+@import "styles/variables";
+
+.mobileMenu {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 16px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+  }
+}
